@@ -1,0 +1,16 @@
+{
+  "browserify": true,
+  "strict": true,
+  "browser": true,
+  "indent": 2,
+  "trailing": true,
+  "unused": true,
+  "undef": true,
+  "curly": true,
+  "loopfunc": true,
+  "globals": {
+    "console": true,
+    "ga": true,
+    "require": true
+  }
+}

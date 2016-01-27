@@ -1,0 +1,26 @@
+// Page
+//------------------------------------------------------------------------------
+
+html {
+  background-color: $color-white;
+  color: $color-black;
+  font-family: $font-sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  padding: 1rem;
+
+  @include bp-medium {
+    font-size: 1em;
+    padding: 2rem;
+  }
+
+  @include bp-large {
+    font-size: 1.125em;
+    padding: 3rem;
+  }
+
+  @include bp-full {
+    font-size: 1.25em;
+    padding: 4rem;
+  }
+}

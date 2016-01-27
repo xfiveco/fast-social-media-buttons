@@ -1,0 +1,39 @@
+{
+  "name": "xfive-frontend",
+  "version": "0.0.1",
+  "description": "Xfive Frontend Build Tools",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "browser-sync": "^2.11.1",
+    "browserify": "^13.0.0",
+    "chokidar-cli": "^1.2.0",
+    "clean-css": "^3.4.9",
+    "cssnano": "^3.4.0",
+    "imagemin-cli": "^2.1.0",
+    "jshint": "^2.9.1",
+    "minifyify": "^7.2.1",
+    "node-sass": "^3.4.2",
+    "parallelshell": "^2.0.0",
+    "postcss": "^5.0.14",
+    "postcss-cli": "^2.4.0",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "sass": "node-sass --include-path assets/bower_components --source-map true assets/scss/main.scss dist/css/main.css",
+    "build:css": "node-sass --include-path assets/bower_components --source-map true assets/scss/main.scss dist/css/main.min.css && postcss --use autoprefixer -b \"last 2 versions\" --use cssnano -o dist/css/main.min.css dist/css/main.min.css",
+    "lint": "jshint assets/js",
+    "build:js": "browserify assets/js/main.js -d -p [minifyify --map bundle.map.json --output dist/js/bundle.map.json] > dist/js/bundle.js",
+    "build": "npm run build:css -s && npm run build:js -s",
+    "imagemin": "imagemin assets/img dist/img",
+    "watch:css": "chokidar assets/scss -c \"npm run sass\" -d 10",
+    "watch:js": "chokidar assets/js -c \"npm run build:js\" -d 10",
+    "watch:images": "chokidar assets/img -c \"npm run imagemin\" -d 10",
+    "browsersync": "browser-sync start --files \"dist\" --server",
+    "dev": "parallelshell \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:images\" \"npm run browsersync\""
+  },
+  "author": "Xfive",
+  "license": "ISC"
+}

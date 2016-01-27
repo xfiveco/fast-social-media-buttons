@@ -1,0 +1,16 @@
+{
+  "name": "xfive-frontend",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "^3.0.3"
+  },
+  "devDependencies": {}
+}
