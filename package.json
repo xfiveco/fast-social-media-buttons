@@ -31,7 +31,7 @@
     "watch:css": "chokidar assets/scss -c \"npm run sass\" -d 10",
     "watch:js": "chokidar assets/js -c \"npm run build:js\" -d 10",
     "watch:images": "chokidar assets/img -c \"npm run imagemin\" -d 10",
-    "browsersync": "browser-sync start --files \"dist\" --server",
+    "browsersync": "browser-sync start --files \"*.html, dist\" --server",
     "dev": "parallelshell \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:images\" \"npm run browsersync\""
   },
   "author": "Xfive",

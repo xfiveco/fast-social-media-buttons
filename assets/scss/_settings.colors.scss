@@ -2,16 +2,18 @@
 // Colors
 //------------------------------------------------------------------------------
 
-$color-brand: #961e32;
-$color-white: #ffffff;
-$color-gray-light: #cccccc;
-$color-black: #4a5052;
+$color-dark-blue: #193441;
+$color-medium-blue: #3E606F;
+$color-medium-green: #91AA9D;
+$color-light-green: #D1DBBD;
+$color-white: #FCFFF5;
 
 // Text
-$color-text: $color-black;
+$color-bg: $color-dark-blue;
+$color-text: $color-white;
 
 // Links
-$color-link: #0980b2;
+$color-link: $color-light-green;
 
 // Borders
-$color-border: $color-gray-light;
+$color-border: $color-medium-blue;

@@ -2,11 +2,11 @@
 //------------------------------------------------------------------------------
 
 html {
-  background-color: $color-white;
-  color: $color-black;
+  background-color: $color-bg;
+  color: $color-text;
   font-family: $font-sans-serif;
   font-size: 0.875rem;
-  line-height: 1.45;
+  line-height: 2;
   padding: 1rem;
 
   @include bp-medium {
