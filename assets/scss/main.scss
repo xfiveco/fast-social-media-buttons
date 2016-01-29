@@ -1,9 +1,7 @@
-/* =========================================================================
-
-    Project: Fast Social Media Buttons
-    Author: Xfive
-
-   ========================================================================= */
+/*
+  Project: Fast Social Media Buttons
+  Author: Xfive
+ */
 
 @import "settings.colors";
 @import "settings.global";
@@ -20,6 +18,11 @@
 @import "elements.links";
 @import "elements.lists";
 @import "elements.page";
+
+@import "objects.list-bare";
+
+@import "components.layout";
+@import "components.share-buttons";
 
 @import "trumps.clearfix";
 @import "trumps.utilities";

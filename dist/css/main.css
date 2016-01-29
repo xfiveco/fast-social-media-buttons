@@ -1,9 +1,7 @@
-/* =========================================================================
-
-    Project: Fast Social Media Buttons
-    Author: Xfive
-
-   ========================================================================= */
+/*
+  Project: Fast Social Media Buttons
+  Author: Xfive
+ */
 /* 320px */
 /* 768px */
 /* 1024px */
@@ -506,6 +504,59 @@ html {
     html {
       font-size: 1.25em;
       padding: 4rem; } }
+
+.o-list-bare {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.c-container {
+  max-width: 900px; }
+
+.c-share-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 4rem 1rem 2rem 0; }
+
+.c-share-buttons__button {
+  background: #3E606F;
+  border-radius: 100%;
+  color: #FCFFF5;
+  display: block;
+  font-weight: bold;
+  height: 6rem;
+  line-height: 6rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 6rem; }
+
+.c-share-buttons__icon {
+  fill: #FCFFF5;
+  height: 35%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 35%; }
+
+.c-share-buttons__counter {
+  background: #91AA9D;
+  border-radius: 100%;
+  color: #FCFFF5;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 3rem;
+  line-height: 3rem;
+  position: absolute;
+  right: -1.25rem;
+  text-align: center;
+  text-decoration: none;
+  top: -1.25rem;
+  width: 3rem;
+  z-index: -1; }
 
 /* Hide visually but not from screen readers */
 .u-hide {

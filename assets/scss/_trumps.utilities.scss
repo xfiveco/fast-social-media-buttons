@@ -1,10 +1,7 @@
-
 // Utilities
-//------------------------------------------------------------------------------
 
 /* Hide visually but not from screen readers */
 // Allow important defs in utility class
-// scss-lint:disable ImportantRule
 .u-hide {
   left: -9999em !important;
   position: absolute !important;

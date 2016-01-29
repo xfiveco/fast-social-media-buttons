@@ -1,0 +1,50 @@
+// Share Buttons
+
+.c-share-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 4rem 1rem 2rem 0;
+}
+
+.c-share-buttons__button {
+  background: $color-medium-blue;
+  border-radius: 100%;
+  color: $color-white;
+  display: block;
+  font-weight: bold;
+  height: 6rem;
+  line-height: 6rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 6rem;
+}
+
+.c-share-buttons__icon {
+  fill: $color-white;
+  height: 35%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 35%;
+}
+
+.c-share-buttons__counter {
+  background: $color-medium-green;
+  border-radius: 100%;
+  color: $color-white;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 3rem;
+  line-height: 3rem;
+  position: absolute;
+  right: -1.25rem;
+  text-align: center;
+  text-decoration: none;
+  top: -1.25rem;
+  width: 3rem;
+  z-index: -1;
+}
