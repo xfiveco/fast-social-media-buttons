@@ -1,10 +1,17 @@
 // Share Buttons
 
 .c-share-buttons {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 4rem 1rem 2rem 0;
+
+  @include bp-medium {
+    align-content: flex-start;
+    flex-direction: row;
+  }
 }
 
 .c-share-buttons__button {
@@ -19,6 +26,12 @@
   text-align: center;
   text-decoration: none;
   width: 6rem;
+  margin-bottom: 2em;
+
+  &:hover {
+
+
+  }
 }
 
 .c-share-buttons__icon {
@@ -36,7 +49,7 @@
   border-radius: 100%;
   color: $color-white;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-weight: bold;
   height: 3rem;
   line-height: 3rem;

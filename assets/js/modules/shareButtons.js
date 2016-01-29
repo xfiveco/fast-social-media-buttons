@@ -9,7 +9,7 @@ module.exports = function() {
   /**
    * Share Buttons element
    */
-  var shareButtons = document.querySelector(".js-share-button");
+  var shareButtons = document.querySelector(".js-share-buttons");
 
   // Check if there are any share buttons
   if (shareButtons) {
@@ -21,7 +21,8 @@ module.exports = function() {
    */
   function callSharedCount() {
 
-    var url = encodeURIComponent(location.href);
+    // var url = encodeURIComponent(location.href);
+    var url = encodeURIComponent('https://www.xfive.co/blog/xhtmlized-has-rebranded-to-xfive/');
     var apikey = "39204aafa6140ee754899617c7dd6736ff50e08b";
     var request = new XMLHttpRequest();
 

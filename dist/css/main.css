@@ -514,10 +514,16 @@ html {
   max-width: 900px; }
 
 .c-share-buttons {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 4rem 1rem 2rem 0; }
+  @media only screen and (min-width: 768px) {
+    .c-share-buttons {
+      align-content: flex-start;
+      flex-direction: row; } }
 
 .c-share-buttons__button {
   background: #3E606F;
@@ -530,7 +536,8 @@ html {
   position: relative;
   text-align: center;
   text-decoration: none;
-  width: 6rem; }
+  width: 6rem;
+  margin-bottom: 2em; }
 
 .c-share-buttons__icon {
   fill: #FCFFF5;
@@ -546,7 +553,7 @@ html {
   border-radius: 100%;
   color: #FCFFF5;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-weight: bold;
   height: 3rem;
   line-height: 3rem;
