@@ -511,6 +511,8 @@ html {
   padding: 0; }
 
 .c-bolt {
+  animation: scale 200ms ease-in forwards;
+  transform-origin: 100% 0;
   fill: #3E606F;
   display: block;
   height: 50vh;
@@ -528,6 +530,12 @@ html {
     .c-bolt {
       height: 80vh;
       right: 20%; } }
+
+@keyframes scale {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 
 .c-container {
   max-width: 900px; }

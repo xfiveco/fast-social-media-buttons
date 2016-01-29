@@ -1,6 +1,8 @@
 // Bolt
 
 .c-bolt {
+  animation: scale 200ms ease-in forwards;
+  transform-origin: 100% 0;
   fill: $color-medium-blue;
   display: block;
   height: 50vh;
@@ -20,5 +22,14 @@
   @include bp-full {
     height: 80vh;
     right: 20%;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
