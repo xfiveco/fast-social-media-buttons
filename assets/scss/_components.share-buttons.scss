@@ -6,11 +6,12 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 4rem 1rem 2rem 0;
+  margin: 4rem 0 2rem;
 
   @include bp-medium {
     align-content: flex-start;
     flex-direction: row;
+    margin: 4rem 1rem 4rem 0;
   }
 }
 
@@ -22,15 +23,17 @@
   font-weight: bold;
   height: 6rem;
   line-height: 6rem;
+  margin-bottom: 2em;
   position: relative;
   text-align: center;
   text-decoration: none;
   width: 6rem;
-  margin-bottom: 2em;
+
+  @include bp-medium {
+    margin-bottom: 0;
+  }
 
   &:hover {
-
-
   }
 }
 
