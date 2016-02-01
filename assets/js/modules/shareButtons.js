@@ -9,19 +9,19 @@ module.exports = function() {
   /**
    * Share Buttons element
    */
-  var shareButtons = document.querySelector(".js-share-buttons");
+  var shareButtons = document.querySelector('.js-share-buttons');
+  var url = encodeURIComponent(location.href);
 
   // Check if there are any share buttons
   if (shareButtons) {
-    callSharedCount();
+    querySharedCount();
+    updateShareUrls();
   }
 
   /**
    * Call SharedCount.com API for number of shares
    */
-  function callSharedCount() {
-
-    var url = encodeURIComponent(location.href);
+  function querySharedCount() {
     var apikey = "f1fb220a7cfd371ad071fd44c7745575397ed2d4"; // Please register at sharedcount.com for your own API key, this one is limited to xfiveco.github.io
     var request = new XMLHttpRequest();
 
@@ -56,6 +56,17 @@ module.exports = function() {
       } else {
         element.style.display = 'none';
       }
+    }
+  }
+
+  /**
+   * Insert proper sharing URL to sharer links
+   */
+  function updateShareUrls() {
+    var buttons = shareButtons.querySelectorAll('a');
+    for (var i = 0; i < buttons.length; i++) {
+      var new_url = buttons[i].getAttribute('href').replace('{url}', url);
+      buttons[i].setAttribute('href', new_url)
     }
   }
 };
