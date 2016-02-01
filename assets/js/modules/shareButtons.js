@@ -65,8 +65,8 @@ module.exports = function() {
   function updateShareUrls() {
     var buttons = shareButtons.querySelectorAll('a');
     for (var i = 0; i < buttons.length; i++) {
-      var new_url = buttons[i].getAttribute('href').replace('{url}', url);
-      buttons[i].setAttribute('href', new_url)
+      var new_url = buttons[i].getAttribute('href').replace('#url', url);
+      buttons[i].setAttribute('href', new_url);
     }
   }
 };
