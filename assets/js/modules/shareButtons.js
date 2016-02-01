@@ -21,9 +21,8 @@ module.exports = function() {
    */
   function callSharedCount() {
 
-    // var url = encodeURIComponent(location.href);
-    var url = encodeURIComponent('https://www.xfive.co/blog/xhtmlized-has-rebranded-to-xfive/');
-    var apikey = "39204aafa6140ee754899617c7dd6736ff50e08b";
+    var url = encodeURIComponent(location.href);
+    var apikey = "f1fb220a7cfd371ad071fd44c7745575397ed2d4"; // Please register at sharedcount.com for your own API key, this one is limited to xfiveco.github.io
     var request = new XMLHttpRequest();
 
     request.open('GET', '//free.sharedcount.com/?apikey=' + apikey + '&url=' + url, true);
