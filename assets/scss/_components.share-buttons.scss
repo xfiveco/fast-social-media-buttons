@@ -57,7 +57,7 @@
   background: $color-medium-green;
   border-radius: 100%;
   color: $color-white;
-  display: block;
+  display: none;
   font-size: 1.125rem;
   font-weight: bold;
   height: 3rem;
@@ -69,4 +69,19 @@
   top: -1.25rem;
   width: 3rem;
   z-index: 1;
+
+  &.is-visible {
+    display: block;
+    animation: a-scale-up 0.2s ease-out;
+  }
+}
+
+@keyframes a-scale-up {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

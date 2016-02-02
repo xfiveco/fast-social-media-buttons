@@ -45,16 +45,13 @@ module.exports = function() {
    * @param  {number} count   Number of shares
    */
   function displayCount(selector, count) {
-
     var element = document.querySelector(selector);
 
     if (element) {
-      // We only display non-zero values
-      if (count && count !== 0) {
+      // Only display counts bigger than zero
+      if (count && count > 0) {
         element.innerHTML = count;
-      // If there are no shares, hide the count element inside the button
-      } else {
-        element.style.display = 'none';
+        element.classList.add('is-visible');
       }
     }
   }
