@@ -4,7 +4,7 @@ Check out our tutorial showing how to create [fast social media buttons with cou
 
 See the result at the **[demo page](http://xfiveco.github.io/fast-social-media-buttons/)**.
 
-[![Fast Social Media Buttons](dist/img/fast-social-media-buttons-small.jpg)](http://xfiveco.github.io/fast-social-media-buttons/)
+[![Fast Social Media Buttons](dist/img/fast-social-media-buttons-small2.jpg)](http://xfiveco.github.io/fast-social-media-buttons/)
 
 Some parts in this repository are not related to the social media buttons themselves, but rather it’s a custom build workflow of this project (probably irrelevant in your project). The following parts are referred in the tutorial:
 
