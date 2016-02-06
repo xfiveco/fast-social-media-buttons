@@ -1,4 +1,4 @@
-# Lighting-Fast Social Media Buttons with Counters
+# Lightning-Fast Social Media Buttons with Counters
 
 Check out our tutorial showing how to create [fast social media buttons with counters](https://www.xfive.co/blog/lighting-fast-social-media-buttons-with-counters/) with just **1 request** and **3kB of code**.
 
